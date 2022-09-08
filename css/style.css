@@ -1,0 +1,265 @@
+:root{
+    --color-primary:rgb(245, 1, 1); 
+    --color-secondary:#774918 ;
+    --color-terciario:#fab6b669;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+
+}
+
+
+
+/*
+**************
+* HOME
+**************
+*/
+
+
+
+.home {
+    position: relative;
+    background-size: cover;
+    background-image: url(../imagens/photo.jpeg);
+    height: 100vh;
+}
+.home .header{
+    padding: 20px;
+}
+.home .header .nav{
+    display: flex;
+    justify-content: center;
+}
+.home .header .nav .img {
+    width: 200px;
+    height: 200px;
+    margin: 0 30px;
+}
+.home .header .nav ul {
+    display: flex;
+    list-style: none;
+}
+.home .header .nav ul li {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+}
+.home .header .nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 20px;
+}
+.home .header .nav ul li a:hover{
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+
+/*
+*************
+HOME-BANNER
+*************
+*/
+.home .banner{
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 316px;
+    width: 700px;
+    margin-left: -350px;
+    margin-top: -98px;
+
+    animation-name: Animacao;
+    animation-iteration-count: 1;
+    animation-duration: 5000ms;
+
+}
+.home .banner span {
+    display: block;
+}
+.home .banner .img-2 {
+    width: 100px;
+    height: 100px;
+}
+.home .banner .slogan {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.home .banner h1 {
+    font-size: 110px;
+}
+.home .banner .slogan2 {
+    margin-bottom: 15px;
+}
+@keyframes Animacao {
+0%{
+    opacity: 0%;
+}
+
+100%{
+    opacity: 100%;
+}
+}
+/*
+*************
+ABOUT
+*************
+*/
+.about {
+    background-color: var(--color-primary);
+}
+.about .container {
+    display: flex;
+}
+.about .timing {
+    width: 33%;
+    padding: 20px;
+    background-image: url(../imagens/balcao.jpeg);
+    position: relative;
+    top: -50px;
+}
+.about .timing .horario {
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 25px 20px;
+}
+.about .timing .img3 {
+    width: 70px;
+    height: 70px;
+}
+.about .timing h3 {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-primary);
+    width: fit-content;
+    margin: 0 auto 10px auto;
+    font-size: 25px;
+}
+.about .experience {
+    width: 66%;
+}
+.about .timing .text {
+    margin: 5px 0;
+}
+.about .timing .text::after{
+    content: '•';
+    display: block;
+    color: white;
+    font-size: 30px;
+    margin-top: 5px;
+}
+.about .timing .text:last-of-type:after{
+    content: '|';
+}
+.about .timing .text h4{
+    color: gray;
+    font-weight: 400;
+    font-size: 16px;
+}
+.about .timing span {
+    color: white;
+    font-size: 16px;
+    display: block;
+}
+.about .timing .mapa {
+    width: 30px;
+    height: 50px;
+}
+.about .timing .mapa2 {
+    width: 40px;
+    height: 40px;
+}
+.about .experience .img4 {
+    width: 300px;
+    height: 350px;
+}
+.about .experience {
+    color: white;
+    width: 66%;
+    margin-left: 7%;
+    margin-top: 100px;
+}
+.about .experience h2 {
+    font-weight: 400;
+    font-size: 40px;
+}
+.about .experience h2:after{
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    margin: 20px 0;
+}
+.about .experience .text1 {
+    display: flex;
+    justify-content: space-between;
+}
+.about .experience .text1 p {
+    margin-bottom: 60px;
+    margin-top: 30px;
+    font-weight: 100;
+    font-size: 17px;
+}
+/*
+*************
+services
+*************
+*/
+.services{
+    padding: 100px;
+    text-align: center;
+    background-color: var(--color-terciario)
+}
+.services .boxes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.services h2 {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 50px;
+
+}
+.services .box1{
+    border: 2px solid var(--color-secondary);
+    padding: 40px 30px;
+    margin: 30px;
+
+}
+.services .box1 h4 {
+    color: var(--color-secondary);
+    margin-top: 10px;
+}
+.services .box1 p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.services .container .img5 {
+    width: 50px;
+    height: 50px;
+}
+.services .container .boxes .box1 .img6 {
+    width: 120px;
+    height: 120px;
+}
